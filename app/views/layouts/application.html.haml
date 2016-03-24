@@ -6,7 +6,14 @@
 	=javascript_include_tag 'application', 'data-turbolink-track'=>true
 	=csrf_meta_tags
 %body
-	=yield
+	%nav.nav.navbar-default
+		.container
+			.navbar-header
+				=link_to "Workout", root_path, class:"navbar-brand"
+			.nav.navbar-nav.navbar-right
+				=link_to "New Workout", new_work_path, class:"navbar navbar-link"
+	.container
+		=yield
 
 
 
