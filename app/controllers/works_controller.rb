@@ -3,7 +3,7 @@ class WorksController < ApplicationController
 	before_action :get_work, only: [:show,:edit,:update,:destroy]
 
 	def index
-		@workouts = Work.all
+		@workouts = Work.all.order("created_at DESC")
 	end
 
 	def show
