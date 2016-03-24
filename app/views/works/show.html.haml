@@ -9,3 +9,12 @@
 =link_to "Delete", @workout, method: :delete, data: {confirm: "Are you Sure?"}
 |
 =link_to "Back",root_path
+
+
+#exercises
+	%h2 Exercises
+	= render @workout.exercises
+
+
+	%h3 Add an Exercise
+	= render 'exercises/form'
