@@ -4,11 +4,11 @@
 	%p= @workout.mood
 	%p= @workout.length
 
-=link_to "Edit", edit_work_path(@workout)
-|
-=link_to "Delete", @workout, method: :delete, data: {confirm: "Are you Sure?"}
-|
-=link_to "Back",root_path
+=link_to "Edit", edit_work_path(@workout),class:"btn btn-primary"
+
+=link_to "Delete", @workout, method: :delete, data: {confirm: "Are you Sure?"},class:"btn btn-danger"
+
+=link_to "Back",root_path,class:"btn btn-info"
 
 
 #exercises
