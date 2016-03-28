@@ -1,9 +1,0 @@
-This is Rails App of Workout Freaks
-
-This App has Following Features:
-
-1)Create A workout
-
-2)Edit a workout
-
-3) Add Exercise to the Workout
